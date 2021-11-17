@@ -44,7 +44,6 @@ async function run() {
     const userCollection = database.collection("users");
     const doctorCollection = database.collection("doctors");
     console.log("db connected");
-
     // doctost add image proccecing
     app.post("/doctos", async (req, res) => {
       const name = req.body.name;
